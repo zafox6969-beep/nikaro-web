@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aaa;
+}
+
+section {
+    background: #1b1b1b;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #00bfff;
+}
+
+.rate-box p,
+.features li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.features ul {
+    padding-left: 20px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 24px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #0095cc;
+}
+
+.status {
+    text-align: center;
+}
+
+.online {
+    color: #00ff66;
+    font-size: 24px;
+    font-weight: bold;
+}
