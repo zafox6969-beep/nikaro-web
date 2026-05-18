@@ -27,6 +27,13 @@
             </a>
               <a href="https://ratemyserver.net/index.php?page=detailedlistserver&serid=23381&url_sname=NikaRO" target='_blank' title = "Review NikaRO at RateMyServer.Net"><img src = 'https://ratemyserver.net/images/site_icon.gif' border = 0 alt = "Review NikaRO at ratemyserver.net/"></a>
           </div>
+                
+                  <div id="status-bar" style="padding: 10px; background: #f4f4f4; border-radius: 5px; font-family: sans-serif;">
+                <strong>Server Status:</strong> <span id="server-status">Loading...</span> |
+                <strong>Players:</strong> <span id="player-count">0</span> |
+                <strong>Peak:</strong> <span id="peak-count">0</span>
+                </div>
+                
                 <div class="nav-links">
                     <a href="#rates">Rates</a>
                     <a href="#features">Características</a>
@@ -199,6 +206,36 @@
         </p>
 
     </footer>
+    <script>
+         async function refreshNikaStatus() {
+             try {
+                 const response = await fetch('https://nikaro-api.duckdns.org/status.php');
+                 const data = await response.json();
+    
+                 // Update the text
+                 document.getElementById('player-count').innerText = data.online;
+                 document.getElementById('peak-count').innerText = data.peak;
+   
+                const statusEl = document.getElementById('server-status');
+                statusEl.innerText = data.status.overall.toUpperCase();
+   
+                // Change color based on status
+                if (data.status.overall === 'online') {
+                    statusEl.style.color = 'green';
+                } else {
+                    statusEl.style.color = 'red';
+                }
+            } catch (error) {
+                console.error("Could not load server status", error);
+                document.getElementById('server-status').innerText = "OFFLINE";
+            }
+        }
+   
+        // Run it immediately
+        refreshNikaStatus();
+        // Optional: Refresh every 60 seconds
+        setInterval(refreshNikaStatus, 60000);
+   </script>
 
 </body>
 </html>
