@@ -4,31 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NikaRO</title>
-
-    <link rel="stylesheet" href="style.css">
-
     <meta name="description" content="Servidor Renewal de Ragnarok Online enfocado en estabilidad, comunidad y progresión clásica moderna.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="hero">
-
+    <header class="hero">
         <div class="overlay">
+            <nav class="site-nav" aria-label="Navegación principal">
+                <a class="logo" href="#top" aria-label="NikaRO inicio">
+                    <img src="images/nicaro-logo2.jpg" alt="NikaRO">
+                </a>
 
-            <nav>
-                <div class="logo">
-    <img src="images/nicaro-logo2.jpg" alt="NikaRO Logo">
-                </div>
-
-          <div style="text-align: center; margin: 20px 0;">
-            <a href="http://www.toprohispano.com/vote/index.php?id=1210" target="_blank" rel="noopener">
-         <img src="http://www.toprohispano.com/images/banner.jpg" alt="Vote for us on TopROHispano" border="0">
-            </a>
-              <a href="https://ratemyserver.net/index.php?page=detailedlistserver&serid=23381&url_sname=NikaRO" target='_blank' title = "Review NikaRO at RateMyServer.Net"><img src = 'https://ratemyserver.net/images/site_icon.gif' border = 0 alt = "Review NikaRO at ratemyserver.net/"></a>
-              <a target="_blank" href="https://www.gamestop200.com/details/885/vote" title="GamesTop200"><img src="https://www.gamestop200.com/resources/website/img/BannerVoto3.jpg" alt="GamesTop200" /></a>
-          </div>
-                
                 <div class="nav-links">
                     <a href="#rates">Rates</a>
                     <a href="#features">Características</a>
@@ -36,206 +23,237 @@
                 </div>
             </nav>
 
-            <div class="hero-content">
+            <div class="hero-layout" id="top">
+                <div class="hero-content">
+                    <p class="eyebrow">Ragnarok Online Renewal</p>
+                    <h1>NikaRO</h1>
+                    <p class="tagline">
+                        Renewal moderno, comunidad clásica, Episode 18 y progresión justa sin ventajas pay-to-win.
+                    </p>
 
+                    <div class="hero-buttons">
+                        <a class="btn primary"
+                           href="downloads/">
+                            Descargar Cliente
+                        </a>
 
-                <p class="tagline">
-                    Renewal moderno. Comunidad clásica. Sin basura pay-to-win.
-                </p>
+                        <a class="btn secondary"
+                           href="https://nikaro-api.duckdns.org/fluxcp/?module=account&action=create"
+                           target="_blank"
+                           rel="noopener">
+                            Crear Cuenta
+                        </a>
 
-                <div class="hero-buttons">
-
-                    <a class="btn primary"
-                       href="https://drive.google.com/file/d/1AdSrRG61sZsNYFLVnh3HUJcBuLDPJPl5/view?usp=sharing"
-                       target="_blank">
-                        Descargar Cliente
-                    </a>
-
-                    <a class="btn secondary"
-                       href="https://nikaro-api.duckdns.org/fluxcp/?module=account&action=create"
-                       target="_blank">
-                        Crear Cuenta
-                    </a>
-                    <a class="btn secondary"
-                       href="https://discord.gg/AXahJJSQZ4"
-                         target="_blank">
-                         Discord
-                    </a>
-
+                        <a class="btn secondary"
+                           href="https://discord.gg/AXahJJSQZ4"
+                           target="_blank"
+                           rel="noopener">
+                            Discord
+                        </a>
                     </div>
-                                </div>
-                     <div id="status-bar" style="padding: 12px; background: #192637; border-radius: 10px; font-family: sans-serif;">
-            <strong>Server Status:</strong> <span id="server-status">Loading...</span> |
-            <strong>Players:</strong> <span id="player-count">0</span> |
-            <strong>Peak:</strong> <span id="peak-count">0</span>
-             </div>
                 </div>
 
+                <aside class="server-panel" aria-label="Estado del servidor">
+                    <div id="status-bar" class="status-bar">
+                        <div class="status-item">
+                            <span>Server Status</span>
+                            <strong id="server-status">Loading...</strong>
+                        </div>
+                        <div class="status-item">
+                            <span>Players</span>
+                            <strong id="player-count">0</strong>
+                        </div>
+                        <div class="status-item">
+                            <span>Peak</span>
+                            <strong id="peak-count">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="vote-strip" aria-label="Votar por NikaRO">
+                        <a href="http://www.toprohispano.com/vote/index.php?id=1210" target="_blank" rel="noopener">
+                            <img src="http://www.toprohispano.com/images/banner.jpg" alt="Vote for us on TopROHispano">
+                        </a>
+                        <a href="https://ratemyserver.net/index.php?page=detailedlistserver&serid=23381&url_sname=NikaRO"
+                           target="_blank"
+                           rel="noopener"
+                           title="Review NikaRO at RateMyServer.Net">
+                            <img src="https://ratemyserver.net/images/site_icon.gif" alt="Review NikaRO at RateMyServer">
+                        </a>
+                        <a href="https://www.gamestop200.com/details/885/vote"
+                           target="_blank"
+                           rel="noopener"
+                           title="GamesTop200">
+                            <img src="https://www.gamestop200.com/resources/website/img/BannerVoto3.jpg" alt="GamesTop200">
+                        </a>
+                    </div>
+                </aside>
+            </div>
         </div>
-     
-    </div>
-    
-    <section id="rates">
+    </header>
 
-        <div class="section-title">
-            <h2>Configuración del Servidor</h2>
-            <p>Progresión balanceada enfocada en juego cooperativo y economía estable.</p>
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Base EXP</h3>
-                <p>3x</p>
+    <main>
+        <section id="rates">
+            <div class="section-title">
+                <h2>Configuración del Servidor</h2>
+                <p>Progresión balanceada enfocada en juego cooperativo y economía estable.</p>
             </div>
 
-            <div class="card">
-                <h3>Job EXP</h3>
-                <p>3x</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Base EXP</h3>
+                    <p>3x</p>
+                </div>
+
+                <div class="card">
+                    <h3>Job EXP</h3>
+                    <p>3x</p>
+                </div>
+
+                <div class="card">
+                    <h3>Drop Rate</h3>
+                    <p>2x</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cartas</h3>
+                    <p>0.01%</p>
+                </div>
+
+                <div class="card">
+                    <h3>Nivel Máximo</h3>
+                    <p>275</p>
+                </div>
+
+                <div class="card">
+                    <h3>Clientes</h3>
+                    <p>Máximo 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="section-title">
+                <h2>Características</h2>
+                <p>Una experiencia Renewal con contenido actual, soporte cómodo y herramientas pensadas para jugar sin fricción.</p>
             </div>
 
-            <div class="card">
-                <h3>Drop Rate</h3>
-                <p>2x</p>
+            <div class="feature-highlights">
+                <article class="highlight wide">
+                    <span class="highlight-label">Contenido destacado</span>
+                    <h3>Episode 18: Direction of Prayer</h3>
+                    <p>
+                        Viaja a Rachel y Gray Wolf Village en una historia marcada por la tensión entre los
+                        nativos desplazados y los inmigrantes que han tomado el control, mientras una trama
+                        oscura se mueve detrás del conflicto.
+                    </p>
+                    <p class="requirement">
+                        Requiere nivel base 170 y progreso previo en la historia de Episode 17.2: Legacy of the Wise One.
+                    </p>
+                </article>
+
+                <article class="highlight">
+                    <span class="highlight-label">Comodidad diaria</span>
+                    <h3>NPCs esenciales a tu servicio</h3>
+                    <p>
+                        Ciudades activas con Warpers, Healers, Job Changers, Stat Resetters y otros NPCs
+                        esenciales para mantener una experiencia fluida e inmersiva.
+                    </p>
+                </article>
+
+                <article class="highlight">
+                    <span class="highlight-label">Funciones custom</span>
+                    <h3>Jugabilidad mejorada</h3>
+                    <p>
+                        Disfruta items visualmente armonizados, funciones custom potentes y comandos útiles al
+                        alcance, sin perder la identidad clásica de Ragnarok Online.
+                    </p>
+                </article>
             </div>
 
-            <div class="card">
-                <h3>Cartas</h3>
-                <p>0.03%</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Anti Bot</h3>
+                    <p>Monitoreo activo y enfoque en mantener una economía limpia y competitiva.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Juego en Party</h3>
+                    <p>Mecánicas ajustadas para incentivar parties reales y cooperación entre jugadores.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Renewal Moderno</h3>
+                    <p>Cliente actualizado con contenido Renewal y soporte estable para jobs de tercera clase.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Hosting Estable</h3>
+                    <p>Infraestructura dedicada para minimizar lag, caídas y problemas de conexión.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Comunidad Nostálgica</h3>
+                    <p>Diseño y experiencia inspirados en la era clásica de Ragnarok Online.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Progresión Balanceada</h3>
+                    <p>Rates low-rate Renewal pensados para progresión duradera sin trivializar el contenido.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <div class="section-title">
+                <h2>Comienza tu aventura</h2>
+                <p>Descarga el cliente y entra al mundo de Rune Midgard.</p>
             </div>
 
-            <div class="card">
-                <h3>Nivel Máximo</h3>
-                <p>275</p>
+            <div class="download-box">
+                <a class="btn primary large"
+                   href="downloads/">
+                    Descargar NikaRO
+                </a>
+
+                <a class="btn secondary large"
+                   href="https://nikaro-api.duckdns.org/fluxcp/?module=account&action=create"
+                   target="_blank"
+                   rel="noopener">
+                    Registro
+                </a>
             </div>
-
-            <div class="card">
-                <h3>Clientes</h3>
-                <p>Máximo 3</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="features">
-
-        <div class="section-title">
-            <h2>Características</h2>
-        </div>
-
-        <div class="feature-grid">
-
-            <div class="feature">
-                <h3>🛡️ Anti Bot</h3>
-                <p>
-                    Monitoreo activo y enfoque en mantener una economía limpia y competitiva.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🤝 Juego en Party</h3>
-                <p>
-                    Mecánicas ajustadas para incentivar parties reales y cooperación entre jugadores.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>⚔️ Renewal Moderno</h3>
-                <p>
-                    Cliente actualizado con contenido Renewal y soporte estable para jobs de tercera clase.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🌎 Hosting Estable</h3>
-                <p>
-                    Infraestructura dedicada para minimizar lag, caídas y problemas de conexión.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🎨 Comunidad Nostálgica</h3>
-                <p>
-                    Diseño y experiencia inspirados en la era clásica de Ragnarok Online.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🧩 Progresión Balanceada</h3>
-                <p>
-                    Rates low-rate Renewal pensados para progresión duradera sin trivializar el contenido.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="download">
-
-        <div class="section-title">
-            <h2>Comienza tu aventura</h2>
-            <p>Descarga el cliente y entra al mundo de Rune Midgard.</p>
-        </div>
-
-        <div class="download-box">
-
-            <a class="btn primary large"
-               href="https://drive.google.com/file/d/1AdSrRG61sZsNYFLVnh3HUJcBuLDPJPl5/view?usp=sharing"
-               target="_blank">
-                Descargar NikaRO
-            </a>
-
-            <a class="btn secondary large"
-               href="https://nikaro-api.duckdns.org/fluxcp/?module=account&action=create"
-               target="_blank">
-                Registro
-            </a>
-
-        </div>
-
-    </section>
+        </section>
+    </main>
 
     <footer>
-
         <p>NikaRO © 2026</p>
-
-        <p class="footer-small">
-            Ragnarok Online es propiedad de Gravity Co., Ltd.
-        </p>
-
+        <p class="footer-small">Ragnarok Online es propiedad de Gravity Co., Ltd.</p>
     </footer>
+
     <script>
-         async function refreshNikaStatus() {
-             try {
-                 const response = await fetch('https://nikaro-api.duckdns.org/status.php');
-                 const data = await response.json();
-    
-                 // Update the text
-                 document.getElementById('player-count').innerText = data.online;
-                 document.getElementById('peak-count').innerText = data.peak;
-   
-                const statusEl = document.getElementById('server-status');
+        async function refreshNikaStatus() {
+            const statusEl = document.getElementById('server-status');
+
+            try {
+                const response = await fetch('https://nikaro-api.duckdns.org/status.php');
+                const data = await response.json();
+
+                document.getElementById('player-count').innerText = data.online;
+                document.getElementById('peak-count').innerText = data.peak;
+
                 statusEl.innerText = data.status.overall.toUpperCase();
-   
-                // Change color based on status
-                if (data.status.overall === 'online') {
-                    statusEl.style.color = 'green';
-                } else {
-                    statusEl.style.color = 'red';
-                }
+                statusEl.classList.toggle('online', data.status.overall === 'online');
+                statusEl.classList.toggle('offline', data.status.overall !== 'online');
             } catch (error) {
-                console.error("Could not load server status", error);
-                document.getElementById('server-status').innerText = "OFFLINE";
+                console.error('Could not load server status', error);
+                statusEl.innerText = 'OFFLINE';
+                statusEl.classList.remove('online');
+                statusEl.classList.add('offline');
             }
         }
-   
-        // Run it immediately
-        refreshNikaStatus();
-        // Optional: Refresh every 60 seconds
-        setInterval(refreshNikaStatus, 60000);
-   </script>
 
+        refreshNikaStatus();
+        setInterval(refreshNikaStatus, 60000);
+    </script>
 </body>
 </html>
