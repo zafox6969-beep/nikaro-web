@@ -329,6 +329,65 @@ section {
     font-weight: 800;
 }
 
+.loyalty-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 26px;
+    align-items: stretch;
+    margin: 0 0 34px;
+    padding: 32px;
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(250, 204, 21, 0.12), rgba(94, 200, 255, 0.08)),
+        #151f2b;
+    border: 1px solid rgba(250, 204, 21, 0.18);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
+}
+
+.loyalty-copy h3 {
+    color: #f8fafc;
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.12;
+    margin-bottom: 14px;
+}
+
+.loyalty-copy p {
+    color: #d8e2f1;
+    margin-bottom: 14px;
+}
+
+.loyalty-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.loyalty-rewards {
+    display: grid;
+    gap: 12px;
+}
+
+.reward-item {
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(8, 13, 22, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.reward-item strong,
+.reward-item span {
+    display: block;
+}
+
+.reward-item strong {
+    color: #facc15;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.reward-item span {
+    color: #c9d3e3;
+    font-size: 14px;
+}
+
 .feature {
     padding: 30px;
 }
@@ -454,6 +513,10 @@ footer {
     }
 
     .download-options {
+        grid-template-columns: 1fr;
+    }
+
+    .loyalty-section {
         grid-template-columns: 1fr;
     }
 
