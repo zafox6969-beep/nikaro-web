@@ -416,6 +416,14 @@ section {
     background-position: center;
 }
 
+.wiki-hero {
+    background:
+        linear-gradient(90deg, rgba(7, 10, 16, 0.94), rgba(7, 10, 16, 0.76)),
+        url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .download-shell {
     width: min(1180px, calc(100% - 40px));
     margin: 0 auto;
@@ -436,6 +444,50 @@ section {
 .download-intro p {
     color: #dbeafe;
     font-size: 21px;
+}
+
+.compact-hero .download-shell {
+    padding-bottom: 58px;
+}
+
+.compact-hero .download-intro {
+    padding-top: 48px;
+}
+
+.wiki-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.wiki-tile {
+    display: block;
+    min-height: 220px;
+    padding: 28px;
+    border-radius: 8px;
+    background: #1b2230;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.wiki-tile:hover {
+    transform: translateY(-2px);
+    border-color: rgba(138, 217, 255, 0.28);
+    background: #202a3a;
+}
+
+.wiki-tile h2 {
+    color: #f8fafc;
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.wiki-tile p {
+    color: #d0d8e6;
 }
 
 .download-options {
@@ -489,6 +541,117 @@ section {
     border: 1px solid rgba(203, 213, 225, 0.22);
 }
 
+.wiki-layout {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.wiki-index {
+    position: sticky;
+    top: 22px;
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border-radius: 8px;
+    background: rgba(27, 34, 48, 0.86);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.wiki-index strong {
+    color: #8ad9ff;
+    font-size: 14px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.wiki-index a {
+    color: #d0d8e6;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.wiki-index a:hover {
+    background: rgba(94, 200, 255, 0.1);
+    color: #f8fafc;
+}
+
+.wiki-content {
+    display: grid;
+    gap: 22px;
+}
+
+.wiki-card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #1b2230;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+}
+
+.wiki-card h2 {
+    color: #f8fafc;
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.14;
+    margin-bottom: 12px;
+}
+
+.wiki-card p {
+    color: #d0d8e6;
+    margin-bottom: 16px;
+}
+
+.wiki-card p:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.wiki-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+}
+
+.wiki-stat-grid div {
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(8, 13, 22, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wiki-stat-grid strong,
+.wiki-stat-grid span {
+    display: block;
+}
+
+.wiki-stat-grid strong {
+    color: #8ad9ff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.wiki-stat-grid span {
+    color: #f8fafc;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wiki-list {
+    display: grid;
+    gap: 10px;
+    margin-left: 18px;
+    color: #d0d8e6;
+}
+
 .large {
     font-size: 18px;
 }
@@ -518,6 +681,14 @@ footer {
 
     .loyalty-section {
         grid-template-columns: 1fr;
+    }
+
+    .wiki-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .wiki-index {
+        position: static;
     }
 
     .hero-content,
@@ -560,7 +731,8 @@ footer {
     }
 
     .hero-buttons,
-    .download-box {
+    .download-box,
+    .wiki-actions {
         align-items: stretch;
         flex-direction: column;
     }
