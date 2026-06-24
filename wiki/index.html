@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki | NikaRO</title>
-    <meta name="description" content="Wiki oficial de NikaRO con información de inicio, rates, sistemas, descargas, lealtad y contenido del servidor.">
+    <meta name="description" content="Wiki local de NikaRO con guías de inicio, rates, NPCs, lealtad, contenido y descargas.">
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -24,23 +24,40 @@
                 </div>
             </nav>
 
-            <div class="download-intro">
-                <p class="eyebrow">Centro de información</p>
+            <div class="download-intro wiki-intro">
+                <p class="eyebrow">Guía del servidor</p>
                 <h1>Wiki NikaRO</h1>
                 <p>
-                    Elige una guía para revisar información del servidor en páginas separadas,
-                    fáciles de compartir y mantener.
+                    Información curada para nuevos jugadores y veteranos: cómo empezar,
+                    dónde encontrar los NPCs importantes, cómo funcionan las recompensas
+                    de lealtad y qué sistemas personalizados ofrece el servidor.
                 </p>
             </div>
         </div>
     </header>
 
     <main>
+        <section class="wiki-featured" aria-label="Destacados de la wiki">
+            <article class="wiki-spotlight">
+                <img src="../images/wiki/freebie-npc.webp" alt="Freebie NPC en Prontera">
+                <div>
+                    <span class="highlight-label">Open beta</span>
+                    <h2>Freebie NPC</h2>
+                    <p>
+                        El NPC de bienvenida entrega un apoyo inicial una vez por cuenta.
+                        Úsalo con tu personaje principal y revisa sus ubicaciones antes de avanzar.
+                    </p>
+                    <a class="btn primary" href="inicio/">Ver inicio rápido</a>
+                </div>
+            </article>
+        </section>
+
         <section class="wiki-home" aria-label="Índice de la wiki">
-            <a class="wiki-tile" href="inicio/">
+            <a class="wiki-tile image-tile" href="inicio/">
+                <img src="../images/wiki/freebie-npc.webp" alt="Freebie NPC">
                 <span class="highlight-label">Primeros pasos</span>
                 <h2>Inicio rápido</h2>
-                <p>Cuenta, cliente, acceso al servidor y recomendaciones iniciales.</p>
+                <p>Cuenta, cliente, patcher, Freebie NPC y recomendaciones iniciales.</p>
             </a>
 
             <a class="wiki-tile" href="rates/">
@@ -49,28 +66,30 @@
                 <p>Base EXP, Job EXP, drops, cartas, nivel máximo y clientes permitidos.</p>
             </a>
 
-            <a class="wiki-tile" href="npcs/">
+            <a class="wiki-tile image-tile" href="npcs/">
+                <img src="../images/wiki/slot-enchanter.webp" alt="Slot Enchanter">
                 <span class="highlight-label">Servicios</span>
                 <h2>NPCs esenciales</h2>
-                <p>Warper, Healer, Job Changer, Stat Resetter y filosofía de comodidad.</p>
+                <p>NPCs de Prontera, Eden Armory, Slot Enchanter, Freebie y herramientas QoL.</p>
             </a>
 
-            <a class="wiki-tile" href="lealtad/">
-                <span class="highlight-label">Sistema</span>
-                <h2>Lealtad</h2>
-                <p>@hourlyreward, Loyalty Coins, tienda de lealtad y futuros intercambios por Cash Points.</p>
+            <a class="wiki-tile image-tile" href="lealtad/">
+                <img src="../images/wiki/cash-gear-shop.webp" alt="Cash Gear Shop">
+                <span class="highlight-label">Economía</span>
+                <h2>Lealtad y tiendas</h2>
+                <p>@hourlyreward, Loyalty Coins, Cash Points, shops y misiones de lealtad.</p>
             </a>
 
             <a class="wiki-tile" href="contenido/">
-                <span class="highlight-label">Episodio</span>
-                <h2>Contenido</h2>
-                <p>Episode 18: Direction of Prayer y requisitos de acceso.</p>
+                <span class="highlight-label">Progresión</span>
+                <h2>Contenido y misiones</h2>
+                <p>Episode 18, questboards, weekly hunts, drops por mapa y sistemas custom.</p>
             </a>
 
             <a class="wiki-tile" href="descargas/">
                 <span class="highlight-label">Cliente</span>
                 <h2>Descargas</h2>
-                <p>Cliente completo, cliente lite no disponible y recomendaciones.</p>
+                <p>Cliente completo, patcher y notas para mantener sprites y recompensas al día.</p>
             </a>
         </section>
     </main>

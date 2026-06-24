@@ -460,6 +460,50 @@ section {
     gap: 22px;
 }
 
+.wiki-featured {
+    padding-bottom: 0;
+}
+
+.wiki-spotlight {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+    gap: 28px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(94, 200, 255, 0.12), rgba(250, 204, 21, 0.08)),
+        #151f2b;
+    border: 1px solid rgba(138, 217, 255, 0.18);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
+}
+
+.wiki-spotlight img,
+.feature-with-media img,
+.media-card img,
+.image-tile img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wiki-spotlight img {
+    aspect-ratio: 4 / 3;
+}
+
+.wiki-spotlight h2 {
+    color: #f8fafc;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.05;
+    margin-bottom: 14px;
+}
+
+.wiki-spotlight p {
+    color: #d8e2f1;
+    margin-bottom: 22px;
+}
+
 .wiki-tile {
     display: block;
     min-height: 220px;
@@ -488,6 +532,16 @@ section {
 
 .wiki-tile p {
     color: #d0d8e6;
+}
+
+.image-tile {
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.image-tile img {
+    aspect-ratio: 16 / 10;
+    margin: 0 0 18px;
 }
 
 .download-options {
@@ -608,6 +662,47 @@ section {
     margin-bottom: 0;
 }
 
+.feature-with-media {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.feature-with-media img {
+    aspect-ratio: 4 / 3;
+}
+
+.wiki-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.media-card img {
+    aspect-ratio: 16 / 11;
+    margin-bottom: 18px;
+}
+
+.media-card h2 {
+    font-size: 26px;
+}
+
+.compact-reference {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 140px;
+    gap: 22px;
+    align-items: center;
+}
+
+.compact-reference img {
+    width: 100%;
+    max-width: 140px;
+    justify-self: end;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .wiki-actions {
     display: flex;
     flex-wrap: wrap;
@@ -685,6 +780,17 @@ footer {
 
     .wiki-layout {
         grid-template-columns: 1fr;
+    }
+
+    .wiki-spotlight,
+    .feature-with-media,
+    .wiki-media-grid,
+    .compact-reference {
+        grid-template-columns: 1fr;
+    }
+
+    .compact-reference img {
+        justify-self: start;
     }
 
     .wiki-index {
