@@ -117,6 +117,37 @@ img {
     gap: 14px;
 }
 
+.proof-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.proof-strip div {
+    min-width: 150px;
+    padding: 12px 14px;
+    border: 1px solid rgba(138, 217, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(11, 18, 30, 0.72);
+    backdrop-filter: blur(8px);
+}
+
+.proof-strip strong,
+.proof-strip span {
+    display: block;
+}
+
+.proof-strip strong {
+    color: #f8fafc;
+    font-size: 16px;
+}
+
+.proof-strip span {
+    color: #a7b4c8;
+    font-size: 12px;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -204,6 +235,11 @@ img {
     color: #fb7185;
 }
 
+#server-status.unknown {
+    color: #facc15;
+    font-size: 14px;
+}
+
 .vote-strip {
     display: flex;
     align-items: center;
@@ -250,6 +286,16 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
+}
+
+.weekend-rates {
+    margin-top: 18px;
+    color: #dbeafe;
+    text-align: center;
+}
+
+.weekend-rates strong {
+    color: #facc15;
 }
 
 .card,

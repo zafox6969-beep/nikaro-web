@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NikaRO</title>
-    <meta name="description" content="Servidor Renewal de Ragnarok Online enfocado en estabilidad, comunidad y progresión clásica moderna.">
+    <title>NikaRO | Ragnarok Online Renewal Hispano</title>
+    <meta name="description" content="Servidor hispano de Ragnarok Online Renewal con cuarta clase, rates 6x/6x/6x, fines de semana 9x/9x/6x y progresión justa sin pay-to-win.">
+    <meta property="og:title" content="NikaRO | Ragnarok Online Renewal Hispano">
+    <meta property="og:description" content="Cuarta clase, rates 6x/6x/6x y fines de semana 9x/9x/6x. Entra gratis y únete a la comunidad.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,10 +30,10 @@
 
             <div class="hero-layout" id="top">
                 <div class="hero-content">
-                    <p class="eyebrow">Ragnarok Online Renewal</p>
+                    <p class="eyebrow">Servidor hispano · En línea desde el 14 de junio de 2026</p>
                     <h1>NikaRO</h1>
                     <p class="tagline">
-                        Renewal moderno, comunidad clásica, Episode 18 y progresión justa sin ventajas pay-to-win.
+                        Renewal moderno con cuarta clase, Episode 18 y progresión justa sin ventajas pay-to-win.
                     </p>
 
                     <div class="hero-buttons">
@@ -52,20 +56,26 @@
                             Discord
                         </a>
                     </div>
+
+                    <div class="proof-strip" aria-label="Datos principales de NikaRO">
+                        <div><strong>6x / 6x / 6x</strong><span>Rates habituales</span></div>
+                        <div><strong>9x / 9x / 6x</strong><span>Fines de semana</span></div>
+                        <div><strong>20 jugadores</strong><span>Pico de apertura</span></div>
+                    </div>
                 </div>
 
                 <aside class="server-panel" aria-label="Estado del servidor">
                     <div id="status-bar" class="status-bar">
                         <div class="status-item">
-                            <span>Server Status</span>
-                            <strong id="server-status">Loading...</strong>
+                            <span>Servidor</span>
+                            <strong id="server-status">Consultando…</strong>
                         </div>
                         <div class="status-item">
-                            <span>Players</span>
+                            <span>Jugadores</span>
                             <strong id="player-count">0</strong>
                         </div>
                         <div class="status-item">
-                            <span>Peak</span>
+                            <span>Récord</span>
                             <strong id="peak-count">0</strong>
                         </div>
                     </div>
@@ -103,12 +113,12 @@
             <div class="cards">
                 <div class="card">
                     <h3>Base EXP</h3>
-                    <p>3x</p>
+                    <p>6x</p>
                 </div>
 
                 <div class="card">
                     <h3>Job EXP</h3>
-                    <p>3x</p>
+                    <p>6x</p>
                 </div>
 
                 <div class="card">
@@ -131,6 +141,7 @@
                     <p>Máximo 3</p>
                 </div>
             </div>
+            <p class="weekend-rates"><strong>Fines de semana:</strong> 9x Base EXP · 9x Job EXP · 6x Drops</p>
         </section>
 
         <section id="features">
@@ -221,7 +232,7 @@
 
                 <div class="feature">
                     <h3>Renewal Moderno</h3>
-                    <p>Cliente actualizado con contenido Renewal y soporte estable para jobs de tercera clase.</p>
+                    <p>Cliente actualizado con contenido Renewal y soporte estable para jobs de cuarta clase.</p>
                 </div>
 
                 <div class="feature">
@@ -284,9 +295,9 @@
                 statusEl.classList.toggle('offline', data.status.overall !== 'online');
             } catch (error) {
                 console.error('Could not load server status', error);
-                statusEl.innerText = 'OFFLINE';
-                statusEl.classList.remove('online');
-                statusEl.classList.add('offline');
+                statusEl.innerText = 'NO DISPONIBLE';
+                statusEl.classList.remove('online', 'offline');
+                statusEl.classList.add('unknown');
             }
         }
 
